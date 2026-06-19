@@ -270,7 +270,14 @@ h1,h2,h3,h4,p{margin:0;}
   border-bottom:1px solid var(--line);
   padding:14px 0;
 }
-.mobile-panel .mp-cta{margin-top:30px;}
+.mobile-panel .mp-cta{
+     margin-top:30px;
+     font-family:var(--font-mono);
+     font-size:13px;
+     letter-spacing:.08em;
+     border-bottom:none;
+     padding:19px 32px;
+   }
 
 /* ============================================
    HERO
