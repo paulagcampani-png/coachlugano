@@ -2,9 +2,8 @@ backend:
   name: github
   repo: paulagcampani-png/coachlugano
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  site_domain: decap-oauth-helper.netlify.app
+  base_url: https://coachlugano.vercel.app
+  auth_endpoint: api/auth
 
 # IMPORTANT — what this file does and does NOT do:
 # - It ONLY edits text between the <!-- decap:xxx --> ... <!-- /decap:xxx -->

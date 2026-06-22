@@ -1,0 +1,9 @@
+{
+  "name": "coachfra-lugano-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site for Coach Fra Lugano, with Vercel serverless functions for Decap CMS OAuth.",
+  "dependencies": {
+    "netlify-cms-oauth-provider-node": "^1.0.0"
+  }
+}
