@@ -1,0 +1,90 @@
+backend:
+  name: github
+  repo: paulagcampani-png/coachlugano
+  branch: main
+  base_url: https://decap-oauth-helper.netlify.app
+
+# IMPORTANT — what this file does and does NOT do:
+# - It ONLY edits text between the <!-- decap:xxx --> ... <!-- /decap:xxx -->
+#   marker comments placed inside index.html and index-it.html.
+# - It cannot see or touch the <form> tag's action/method attributes, field
+#   name= attributes, the hidden _subject value, or anything related to
+#   Formspree. Those were deliberately never wrapped in any marker.
+# - It cannot touch CSS, JS, images, or any tracking/analytics code.
+# - English and Italian are two separate entries below — editing one does
+#   NOT automatically translate or update the other. Decap has no
+#   translation logic; each language must be edited on its own.
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "english"
+    label: "English Page (index.html)"
+    files:
+      - file: "index.html"
+        label: "Homepage Text — English"
+        name: "homepage_en"
+        fields:
+          - { label: "Hero Headline", name: "hero_title", widget: "markdown", buttons: [] }
+          - { label: "Hero Description", name: "hero_desc", widget: "text" }
+          - { label: "About — Paragraph 1", name: "about_p1", widget: "text" }
+          - { label: "About — Paragraph 2", name: "about_p2", widget: "text" }
+          - { label: "FAQ 1 — Question", name: "faq_1_q", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq_1_a", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq_2_q", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq_2_a", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq_3_q", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq_3_a", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq_4_q", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq_4_a", widget: "text" }
+          - { label: "FAQ 5 — Question", name: "faq_5_q", widget: "string" }
+          - { label: "FAQ 5 — Answer", name: "faq_5_a", widget: "text" }
+          - { label: "FAQ 6 — Question", name: "faq_6_q", widget: "string" }
+          - { label: "FAQ 6 — Answer", name: "faq_6_a", widget: "text" }
+          - { label: "FAQ 7 — Question", name: "faq_7_q", widget: "string" }
+          - { label: "FAQ 7 — Answer", name: "faq_7_a", widget: "text" }
+          - { label: "Footer Tagline", name: "footer_tagline", widget: "string" }
+          - { label: "Form — First Name Label", name: "form_label_firstname", widget: "string" }
+          - { label: "Form — Last Name Label", name: "form_label_lastname", widget: "string" }
+          - { label: "Form — Email Label", name: "form_label_email", widget: "string" }
+          - { label: "Form — Phone Label", name: "form_label_phone", widget: "string" }
+          - { label: "Form — Goal Question Label", name: "form_label_goal", widget: "string" }
+          - { label: "Form — Message Label", name: "form_label_message", widget: "string" }
+          - { label: "Form — Submit Button Text", name: "form_button_text", widget: "string" }
+          - { label: "Form — Disclaimer Text", name: "form_disclaimer", widget: "text" }
+
+  - name: "italian"
+    label: "Italian Page (index-it.html)"
+    files:
+      - file: "index-it.html"
+        label: "Homepage Text — Italian"
+        name: "homepage_it"
+        fields:
+          - { label: "Hero Headline", name: "hero_title", widget: "markdown", buttons: [] }
+          - { label: "Hero Description", name: "hero_desc", widget: "text" }
+          - { label: "About — Paragraph 1", name: "about_p1", widget: "text" }
+          - { label: "About — Paragraph 2", name: "about_p2", widget: "text" }
+          - { label: "FAQ 1 — Question", name: "faq_1_q", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq_1_a", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq_2_q", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq_2_a", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq_3_q", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq_3_a", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq_4_q", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq_4_a", widget: "text" }
+          - { label: "FAQ 5 — Question", name: "faq_5_q", widget: "string" }
+          - { label: "FAQ 5 — Answer", name: "faq_5_a", widget: "text" }
+          - { label: "FAQ 6 — Question", name: "faq_6_q", widget: "string" }
+          - { label: "FAQ 6 — Answer", name: "faq_6_a", widget: "text" }
+          - { label: "FAQ 7 — Question", name: "faq_7_q", widget: "string" }
+          - { label: "FAQ 7 — Answer", name: "faq_7_a", widget: "text" }
+          - { label: "Footer Tagline", name: "footer_tagline", widget: "string" }
+          - { label: "Form — First Name Label", name: "form_label_firstname", widget: "string" }
+          - { label: "Form — Last Name Label", name: "form_label_lastname", widget: "string" }
+          - { label: "Form — Email Label", name: "form_label_email", widget: "string" }
+          - { label: "Form — Phone Label", name: "form_label_phone", widget: "string" }
+          - { label: "Form — Goal Question Label", name: "form_label_goal", widget: "string" }
+          - { label: "Form — Message Label", name: "form_label_message", widget: "string" }
+          - { label: "Form — Submit Button Text", name: "form_button_text", widget: "string" }
+          - { label: "Form — Disclaimer Text", name: "form_disclaimer", widget: "text" }
