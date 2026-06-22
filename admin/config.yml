@@ -4,6 +4,7 @@ backend:
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  site_domain: decap-oauth-helper.netlify.app
 
 # IMPORTANT — what this file does and does NOT do:
 # - It ONLY edits text between the <!-- decap:xxx --> ... <!-- /decap:xxx -->
